@@ -1,0 +1,152 @@
+[
+  {
+    "playerId": "vk-01",
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co.com/7JW6DfJx/virat-kohli.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm medium",
+    "biddingPrice": 1050000
+  },
+  {
+    "playerId": "bs-02",
+    "name": "Ben Stokes",
+    "country": "England",
+    "image": "https://i.ibb.co.com/0RHzPjPg/ben-stokes.jpg",
+    "role": "All-rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm fast-medium",
+    "biddingPrice": 450000
+  },
+  {
+    "playerId": "ba-03",
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/fVL5SS55/babar-azam.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "biddingPrice": 645000
+  },
+  {
+    "playerId": "rk-04",
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://i.ibb.co.com/mCc0Nr34/rashid-khan.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm legbreak googly",
+    "biddingPrice": 550000
+  },
+  {
+    "playerId": "dw-05",
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/mjTn70g/david-warner.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Right-arm legbreak",
+    "biddingPrice": 985000
+  },
+  {
+    "playerId": "sah-06",
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/W4k44Rm0/shakib-al.jpg",
+    "role": "All-rounder",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Slow left-arm orthodox",
+    "biddingPrice": 475000
+  },
+  {
+    "playerId": "kw-07",
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/8nttS8M2/kane-williamson.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm offbreak",
+    "biddingPrice": 725000
+  },
+  {
+    "playerId": "jb-08",
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "image": "https://i.ibb.co.com/DfF4VCby/jasprit-bumrah.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm fast",
+    "biddingPrice": 560000
+  },
+  {
+    "playerId": "jsb-09",
+    "name": "Jos Buttler",
+    "country": "England",
+    "image": "https://i.ibb.co.com/6Rh5XgvG/jos-buttler.jpg",
+    "role": "Wicket-keeper",
+    "battingType": "Right-hand bat",
+    "bowlingType": "None",
+    "biddingPrice": 875000
+  },
+  {
+    "playerId": "tb-10",
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/0VC7vh5j/trent-boult.jpg",
+    "role": "Bowler",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Left-arm fast-medium",
+    "biddingPrice": 645000
+  },
+  {
+    "playerId": "ss-11",
+    "name": "Steve Smith",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/q33BGY4x/steve-smith.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "Right-arm legbreak",
+    "biddingPrice": 965000
+  },
+  {
+    "playerId": "sa-12",
+    "name": "Shaheen Afridi",
+    "country": "Pakistan",
+    "image": "https://i.ibb.co.com/0jDQk8d2/shaheen-afridi.jpg",
+    "role": "Bowler",
+    "battingType": "Left-hand bat",
+    "bowlingType": "Left-arm fast",
+    "biddingPrice": 785500
+  },
+  {
+    "playerId": "ti-13",
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "image": "https://i.ibb.co.com/3mCrvGc1/tamim-iqbal.jpg",
+    "role": "Batsman",
+    "battingType": "Left-hand bat",
+    "bowlingType": "",
+    "biddingPrice": 885500
+  },
+  {
+    "playerId": "glm-14",
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/XksWTNZh/glenn-maxwell.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "",
+    "biddingPrice": 105000
+  },
+  {
+    "playerId": "cgl-15",
+    "name": "Crish Gayle",
+    "country": "WestIndies",
+    "image": "https://i.ibb.co.com/LdmRKjFd/crish-gayle.jpg",
+    "role": "Batsman",
+    "battingType": "Right-hand bat",
+    "bowlingType": "",
+    "biddingPrice": 905500
+  }
+]
