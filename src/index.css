@@ -9,3 +9,9 @@
 body {
   @apply font-primary;
 }
+
+@layer {
+  .hero-content {
+    @apply bg-[url("./assets/bg-shadow.png")] bg-cover;
+  }
+}
