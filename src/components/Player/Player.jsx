@@ -2,7 +2,6 @@ import { FaUserAlt, FaFlag } from "react-icons/fa";
 
 const Player = ({ player }) => {
   let { image, name, country, role, battingType, bowlingType, biddingPrice, rating } = player;
-  console.log(player);
 
   return (
     <div className="border border-gray-300 rounded-md p-4">

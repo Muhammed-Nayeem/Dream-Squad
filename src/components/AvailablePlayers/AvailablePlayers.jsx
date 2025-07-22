@@ -12,10 +12,8 @@ const AvailablePlayers = () => {
       });
   }, []);
 
-  console.log(allPlayers);
-
   return (
-    <section className="bg-white py-15">
+    <section className="bg-white pt-8 pb-16">
       <div className="container max-w-screen-xl mx-auto">
         <article className="mx-10 xl:mx-0">
           <h2 className="text-2xl text-gray-900 font-bold">
@@ -24,7 +22,7 @@ const AvailablePlayers = () => {
         </article>
         <div className="mx-10 xl:mx-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {allPlayers.map((player) => (
-            <Player key={player.id} player={player} />
+            <Player key={player.playerId} player={player} />
           ))}
         </div>
       </div>
