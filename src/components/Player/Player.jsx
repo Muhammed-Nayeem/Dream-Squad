@@ -1,7 +1,16 @@
 import { FaUserAlt, FaFlag } from "react-icons/fa";
 
-const Player = ({ player }) => {
-  let { image, name, country, role, battingType, bowlingType, biddingPrice, rating } = player;
+const Player = ({ player, selectedPlayersHandler }) => {
+  let {
+    image,
+    name,
+    country,
+    role,
+    battingType,
+    bowlingType,
+    biddingPrice,
+    rating,
+  } = player;
 
   return (
     <div className="border border-gray-300 rounded-md p-4">
@@ -43,7 +52,10 @@ const Player = ({ player }) => {
             <p className="text-base font-semibold text-gray-500">
               {bowlingType ? bowlingType : "N/A"}
             </p>
-            <button className="border border-gray-200 text-sm text-gray-900 px-4 py-1 rounded-md cursor-pointer hover:bg-gray-50">
+            <button
+              onClick={() => selectedPlayersHandler(player)}
+              className="border border-gray-200 text-sm text-gray-900 px-4 py-1 rounded-md cursor-pointer hover:bg-gray-50"
+            >
               Choose Player
             </button>
           </div>

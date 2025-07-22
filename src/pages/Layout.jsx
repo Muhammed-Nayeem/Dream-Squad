@@ -12,9 +12,11 @@ const Layout = () => {
   let [isActive, setIsActive] = useState({
     status: true,
   });
+  let [selectedPlayers, setSelectedPlayers] = useState([]);
 
   const freeCoinsCreditIncreaseHandler = () => {
     setCoins((coins) => coins + 8000000);
+    alert("Wow!Coins credited to your account.");
   };
 
   const activeBtnStateHandler = (text) => {
@@ -29,6 +31,31 @@ const Layout = () => {
     }
   };
 
+  const selectedPlayersHandler = (player) => {
+    let isExist = selectedPlayers.find((singlePlayer) => singlePlayer.playerId === player.playerId);
+    if (coins > player.biddingPrice) {
+      if (isExist) {
+        alert("You cannot buy same player twice!");
+      } else {
+        if (selectedPlayers.length >= totalPlayers) {
+          alert("You cannot buy more then 6 players!");
+        } else {
+          setSelectedPlayers([...selectedPlayers, player]);
+          setCoins((coins) => coins - player.biddingPrice);
+          alert("Player buying successfully.");
+        }
+      }
+    } else {
+      alert("You don't have sufficient coins!");
+    }
+  };
+
+  const removePlayerHandler = (playerId) => {
+    let remainingPlayers = selectedPlayers.filter((player) => player.playerId !== playerId);
+    setSelectedPlayers(remainingPlayers);
+    alert("Player removed successfully!");
+  };
+
   return (
     <>
       <Header coins={coins} />
@@ -37,11 +64,17 @@ const Layout = () => {
         <ButtonContainer
           activeBtnStateHandler={activeBtnStateHandler}
           isActive={isActive}
+          playersCount={selectedPlayers.length}
         />
         {isActive.status ? (
-          <AvailablePlayers />
+          <AvailablePlayers selectedPlayersHandler={selectedPlayersHandler} />
         ) : (
-          <SelectedPlayers totalPlayers={totalPlayers} />
+          <SelectedPlayers
+            totalPlayers={totalPlayers}
+            selectedPlayers={selectedPlayers}
+            activeBtnStateHandler={activeBtnStateHandler}
+            removePlayerHandler={removePlayerHandler}
+          />
         )}
       </main>
       <Footer />

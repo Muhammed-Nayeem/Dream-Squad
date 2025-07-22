@@ -1,4 +1,4 @@
-const ButtonContainer = ({ activeBtnStateHandler, isActive }) => {
+const ButtonContainer = ({ activeBtnStateHandler, isActive, playersCount }) => {
   return (
     <section className="pt-10">
       <div className="container max-w-screen-xl mx-auto">
@@ -13,7 +13,7 @@ const ButtonContainer = ({ activeBtnStateHandler, isActive }) => {
             onClick={() => activeBtnStateHandler("selected")}
             className={`${isActive.status ? "":"bg-yellow-400"} border border-gray-200 px-4 py-1.5 cursor-pointer`}
           >
-            Selected(0)
+            Selected ({playersCount})
           </button>
         </div>
       </div>
