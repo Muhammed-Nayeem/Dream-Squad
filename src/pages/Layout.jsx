@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import AvailablePlayers from "../components/AvailablePlayers/AvailablePlayers";
+import Footer from "../components/Footer/Footer";
 
 const Layout = () => {
   let [coins, setCoins] = useState(0);
@@ -13,10 +14,11 @@ const Layout = () => {
   return (
     <>
       <Header coins={coins} />
-      <main>
+      <main className="mb-60">
         <Hero creditIncreaseHandler={freeCoinsCreditIncreaseHandler} />
         <AvailablePlayers />
       </main>
+      <Footer />
     </>
   ); 
 };

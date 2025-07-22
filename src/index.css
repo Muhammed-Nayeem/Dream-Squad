@@ -11,7 +11,8 @@ body {
 }
 
 @layer {
-  .hero-content {
+  .hero-content,
+  .cta {
     @apply bg-[url("./assets/bg-shadow.png")] bg-cover;
   }
 }
