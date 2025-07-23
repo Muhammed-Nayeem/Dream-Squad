@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast from 'react-hot-toast';
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import AvailablePlayers from "../components/AvailablePlayers/AvailablePlayers";
@@ -16,7 +17,7 @@ const Layout = () => {
 
   const freeCoinsCreditIncreaseHandler = () => {
     setCoins((coins) => coins + 8000000);
-    alert("Wow!Coins credited to your account.");
+    toast.success("Wow!Coins credited to your account.");
   };
 
   const activeBtnStateHandler = (text) => {
