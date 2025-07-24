@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from 'react-toastify';
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import AvailablePlayers from "../components/AvailablePlayers/AvailablePlayers";
@@ -16,7 +17,10 @@ const Layout = () => {
 
   const freeCoinsCreditIncreaseHandler = () => {
     setCoins((coins) => coins + 8000000);
-    alert("Wow!Coins credited to your account.");
+    toast.success("Wow! Free coins added to your account.", {
+      position: "top-center",
+      autoClose: 3000,
+    });
   };
 
   const activeBtnStateHandler = (text) => {
@@ -35,25 +39,40 @@ const Layout = () => {
     let isExist = selectedPlayers.find((singlePlayer) => singlePlayer.playerId === player.playerId);
     if (coins > player.biddingPrice) {
       if (isExist) {
-        alert("You cannot buy same player twice!");
+        toast.warning("Sorry! You can't buy same player twice!", {
+          position: "top-left",
+          autoClose: 3000,
+        });
       } else {
         if (selectedPlayers.length >= totalPlayers) {
-          alert("You cannot buy more then 6 players!");
+          toast.info("No! You can't buy more then 6 players!", {
+            position: "top-left",
+            autoClose: 3000,
+          });
         } else {
           setSelectedPlayers([...selectedPlayers, player]);
           setCoins((coins) => coins - player.biddingPrice);
-          alert("Player buying successfully.");
+          toast.success("Excellent! Player buying successfully.", {
+            position: "top-right",
+            autoClose: 3000,
+          });
         }
       }
     } else {
-      alert("You don't have sufficient coins!");
+      toast.error("OPPS! You don't have enough coins!", {
+        position: "top-center",
+        autoClose: 3000,
+      });
     }
   };
 
   const removePlayerHandler = (playerId) => {
     let remainingPlayers = selectedPlayers.filter((player) => player.playerId !== playerId);
     setSelectedPlayers(remainingPlayers);
-    alert("Player removed successfully!");
+    toast.info("Good! Player removed successfully!", {
+      position: "top-right",
+      autoClose: 3000,
+    });
   };
 
   return (

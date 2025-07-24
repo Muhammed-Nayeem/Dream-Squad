@@ -4,7 +4,7 @@ const SinglePlayer = ({ player, removePlayerHandler }) => {
   let { image, name, role, biddingPrice } = player;
 
   return (
-    <div className="bg-gray-50 px-4 py-8 shadow-md rounded-md flex justify-between items-center">
+    <div className="bg-gray-50 px-4 py-4 rounded-md flex justify-between items-center">
       <div className="flex items-center gap-4">
         <div className="border border-gray-200 rounded-md p-1">
           <figure>
